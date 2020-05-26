@@ -12,3 +12,12 @@ sum+=A[right];
 }
 
 time complexity:O(n+n) as each elements may be visited twice in worst case.
+
+// with negative numbers:
+create a hashmap.
+put(0,-1) in map.
+update sum at each iteration
+for each sum put it in map.
+// to find subarray with given sum
+if we found any key which equals (sum-s) then the subarray will be from that index to i.
+
